@@ -1,0 +1,90 @@
+body{
+  background-color: lightslategray;
+  font-family: fantasy;
+}
+
+h1{
+  margin: 30px;
+  margin-top: 40px;
+  font-size: 30px;
+  text-shadow: 0 5px 10px;
+
+}
+
+#plus{
+  color: red;
+  font-size: 25px;
+}
+
+#minus{
+  color: lightgreen;
+  font-size: 25px;
+}
+
+#multiply{
+  color: yellow;
+  font-size: 25px;
+}
+
+#divide{
+  color: blue;
+  font-size: 25px;
+}
+
+#num1{
+  padding: 20px 30px;
+  padding-right: 8px;
+  align-items: center;
+  background-color: wheat;
+  border-radius: 10px;
+  border: 1px solid black ;
+  box-shadow: 0 2px 5px;
+}
+
+#num2{
+ padding: 20px 30px;
+  padding-right: 8px;
+  align-items: center;
+  background-color: wheat;
+  border-radius: 10px;
+  border: 1px solid black ;
+  box-shadow: 0 2px 5px;
+}
+
+#operator{
+  padding: 20px 30px;
+  padding-right: 8px;
+  align-items: center;
+  background-color: wheat;
+  border-radius: 10px;
+  border: 1px solid black ;
+  box-shadow: 0 2px 5px;
+}
+
+#operator:hover{
+  background-color: whitesmoke;
+}
+
+#operator:focus, 
+#num1:focus, 
+#num2:focus{
+  outline: none;
+}
+
+button{
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 0 2px 5px;
+}
+
+#display{
+  border: 1px solid black;
+  padding: 50px;
+  width: 200px;
+  text-align: center;
+  background-color: palegreen;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px;
+  font-size: 24px;
+}

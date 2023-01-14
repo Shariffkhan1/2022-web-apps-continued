@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Donation Website</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <input id="nav-toggle" type="checkbox">
+      <div class="logo">Donate</div>
+      <ul class="links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Community</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </nav>
+  </header>
+  <main>
+    <h1 class="title">Make Donations</h1>
+    <div class="top">
+      <div class="donationBox">
+        <h2>$5</h2>
+        <button type="button" onclick="storeVal(this)" class="donate" value='$5' id="button">Donate</button>
+      </div>
+      <div class="donationBox">
+        <h2>$10</h2>
+        <button type="button" onclick="storeVal(this)" class="donate" value='$10' id="button1">Donate</button>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="donationBox">
+        <h2>$20</h2>
+        <button type="button" onclick="storeVal(this)" class="donate" value='$20' id="button2">Donate</button>
+      </div>
+      <div class="donationBox">
+        <h2>$50</h2>
+        <button type="button" onclick="storeVal(this)" class="donate" value='$50' id="button3">Donate</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Card Section -->
+  
+  <!-- Modal Section -->
+  
+  <div class="bg-modal">
+    <div class="modal-contents">
+  
+      <form>
+        <h3>Donate</h3>
+        <input type="text" class="field" placeholder="First Name" id="firstname">
+        <input type="text" class="field" placeholder="Last  Name" id="lastname">
+        <input type="text" class="field" placeholder="Email" id="email">
+        <input type="text" placeholder="Phone" class="field" id="phone">
+        <a href="#" id="enter" class="button close" >Submit</a>
+      </form>
+  
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

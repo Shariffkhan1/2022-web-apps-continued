@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculator</h1>
+
+    <div class="add">
+      <input type="number" id="add1">
+      <h1 class="symbol">+</h1>
+      <input type="number" id="add2">
+      <button id="addButton" onclick="addition()">=</button>
+      <p class="display-box" id="addDisplay"></p>
+    </div>
+
+    <div class="subtract">
+      <input type="number" id="subtract1">
+      <h1 class="symbol">-</h1>
+      <input type="number" id="subtract2">
+      <button onclick="subtraction()">=</button>
+      <p class="display-box" id="subtractDisplay"></p>
+    </div>
+
+    <div class="multiply">
+      <input type="number" id="multiply1">
+      <h1 class="symbol">&#215</h1>
+      <input type="number" id="multiply2">
+      <button onclick="multiplication()">=</button>
+      <p class="display-box" id="multiplyDisplay"></p>
+    </div>
+
+    <div class="divide">
+      <input type="number" id="divide1">
+      <h1 class="symbol">&#247</h1>
+      <input type="number" id="divide2">
+      <button onclick="division()">=</button>
+      <p class="display-box" id="divideDisplay"></p>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

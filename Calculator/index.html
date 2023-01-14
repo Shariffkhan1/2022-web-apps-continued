@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="outer">
+    <center>
+      <h1 id="heading">Example of Switch Statement</h1>
+      <h1 id="heading2">Math Operators</h1>
+        <h3 id="addition"><span id="plus">"+"</span>&nbsp;&nbsp;to add two numbers</h3>
+        <h3 id="subtraction"><span id="minus">"-"</span>&nbsp;&nbsp;to subtract two numbers</h3>
+        <h3 id="multiplication"><span id="multiply">"*"</span>&nbsp;&nbsp;to =multiply two numbers</h3>
+        <h3 id="division"><span id="divide">"/"</span>&nbsp;&nbsp;to divide two numbers</h3>
+        <form>
+          <input id="num1" oninput="doMathOperation()" placeholder="Enter First Number"><br><br>
+          <input id="num2" oninput="doMathOperation()" placeholder="Enter Second Number"><br><br>
+          <input id="operator" oninput="doMathOperation()" placeholder="Enter math operator"><br><br>
+          <button id="submitOne">Delete</button>
+        </form><br>
+        <p id="display">Answer is displayed here!</p>
+    </center>
+  </section>
+  <script src="./script.js"></script>
+</body>
+</html>

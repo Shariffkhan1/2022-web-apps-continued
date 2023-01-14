@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,200;1,300&display=swap"
+    rel="stylesheet">
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="./images/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="course.html">Course</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <h1>Contact Us</h1>
+
+  </section>
+
+
+  <!-- Contact Us -->
+
+<section class="location">
+
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.4550641075257!2d-87.6952311846358!3d42.01196926500494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd1d4743fede7%3A0xa2f5b71a6b082b21!2s2501%20W%20Touhy%20Ave%2C%20Chicago%2C%20IL%2060645!5e0!3m2!1sen!2sus!4v1626455414586!5m2!1sen!2sus"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</section>
+
+<section class="contact">
+  <div class="row">
+    <div class="contact-col">
+      <div>
+        <i class="fas fa-home"></i>
+        <span>
+          <h5>XYZ Road, ABC building</h5>
+          <p>Chicago, Illinouis</p>
+        </span>
+      </div>
+      <div>
+        <i class="fas fa-phone"></i>
+        <span>
+          <h5>747 282 8372</h5>
+          <p>Monday to Saturday, 10AM to 6PM</p>
+        </span>
+      </div>
+      <div>
+        <i class="fas fa-envelope"></i>
+        <span>
+          <h5>info@easytutorials.com</h5>
+          <p>Email us your Query</p>
+        </span>
+      </div>
+
+    </div>
+
+
+    <div class="contact-col">
+
+      <form action="form-handler.php" method="POST">
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="Enter email address" required>
+        <input type="text" name="subject" placeholder="Enter your Subject" required>
+        <textarea rows="8" name="message" placeholder="message" required></textarea>
+        <button type="submit" class="hero-btn red-btn"> Send message</button>
+      </form>
+
+    </div>
+
+  </div>
+</section>
+  
+
+
+
+  <!-- Footer -->
+
+  <section class="footer">
+    <h4> About Us </h4>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aspernatur dicta asperiores ratione ad earum fugiat
+      placeat cumque,<br> mollitia, minima dolores nobis, suscipit provident!</P>
+    <div class="icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-linkedin-in"></i>
+    </div>
+    <p>Made with <i class="fas fa-heart"></i> by Shariff Khan</p>
+  </section>
+
+
+
+  <!-- JavaScript for Toggle Menu -->
+  <script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px"
+    }
+
+  </script>
+
+</body>
+
+</html>

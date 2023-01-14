@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #3c5077;
+}
+
+.container{
+  margin-top: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  border: 10px solid white;
+  height: 600px;
+  margin-left: 28%;
+  border-radius: 30px;
+}
+
+.container h1{
+  color: white;
+  font-size: 40px;
+}
+
+.add{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.subtract{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.subtract h1{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.multiply{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.divide{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.display-box{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 80px;
+  height: 30px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 10px;
+  box-shadow: 0 3px 5px rgba(0,0,0);
+}
+
+input{
+  height: 25px;
+  width: 70px;
+  text-align: center;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0);
+}
+
+button{
+  height: 35px;
+  width: 35px;
+  font-size: 30px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.symbol{
+  margin-left: 5px;
+  margin-right: 5px;
+}

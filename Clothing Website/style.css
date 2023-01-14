@@ -1,0 +1,314 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+  background-color: tan;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.btn{
+  margin-right: 100px;
+  background-color: orange;
+  padding: 20px;
+  font-size: 28px;
+  border: none;
+  transform:  skewX(-20deg);
+}
+
+.title div{
+  margin-left: 100px;
+  font-size: 80px
+}
+
+.title div i{
+  color: brown;
+  font-size: 50px;
+}
+
+.title div h1{
+  font-size: 50px;
+  color: brown;
+}
+
+.main{
+  display: flex;
+  margin-top: 50px;
+}
+
+.main div{
+  margin-right: 100px;
+  margin-left: 100px;
+}
+.main div h1{
+  color: darkblue;
+  padding: none;
+  font-size: 30px;
+}
+
+.main div h2{
+  margin-left: 300px;
+  margin-bottom: 30px;
+  margin-right: -600px;
+}
+
+.rack{
+  height: 500px;
+  width: 400px;
+  border-top: 15px solid rgb(85, 22, 22);
+  border-left: 15px solid rgb(85, 22, 22);
+}
+
+.slider{
+  height: 500px;
+  width: 400px;
+  border-bottom: 15px solid rgb(85, 22, 22);
+  border-right: 15px solid rgb(85, 22, 22);
+  
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+}
+
+.right button{
+  margin-left: 400px;
+  width: 150px;
+  margin-top: 70px;
+}
+
+.slide-1, .slide-2, .slide-3, .slide-5{
+  display: block;
+  position: absolute;
+  height: 500px;
+  width: 350px;
+  border-bottom: 15px solid rgb(85, 22, 22);
+  border-right: 15px solid rgb(85, 22, 22);
+}
+
+.slide-1{
+  animation: fade1 10s infinite;
+}
+
+.slide-2{
+  animation: fade2 10s infinite;
+}
+
+.slide-3{
+  animation: fade3 10s infinite;
+}
+
+.slide-5{
+  animation: fade5 10s infinite;
+}
+
+@keyframes fade1{
+  0%{opacity: 1;}
+  25%{opacity: 0;}
+  50%{opacity: 0;}
+  75%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes fade2{
+  0%{opacity: 0;}
+  25%{opacity: 1;}
+  50%{opacity: 0;}
+  75%{opacity: 0;}
+  100%{opacity: 0;}
+}
+
+@keyframes fade3{
+  0%{opacity: 0;}
+  25%{opacity: 0;}
+  50%{opacity: 1;}
+  75%{opacity: 0;}
+  100%{opacity: 0;}
+}
+
+@keyframes fade5{
+  0%{opacity: 0;}
+  25%{opacity: 0;}
+  50%{opacity: 0;}
+  75%{opacity: 1;}
+  100%{opacity: 0;}
+}
+
+.right button{
+  margin-top: 550px;
+}
+
+@media(max-width:1300px){
+  .right button{
+  margin-left: 350px;
+  }
+}
+
+@media(max-width: 1100px){
+  .right button{
+  margin-left: 200px;
+  margin-top: 465px;
+  margin-bottom: 20px;
+}
+
+  .btn{
+  margin-right: 50px;
+  background-color: orange;
+  padding: 15px;
+  font-size: 25px;
+  border: none;
+  transform:  skewX(-20deg);
+}
+
+  .title div{
+  margin-left: 50px;
+  font-size: 80px
+}
+
+.title div i{
+  color: brown;
+  font-size: 50px;
+}
+
+.main{
+  display: flex;
+  margin-top: 50px;
+}
+
+.main div{
+  margin-right: 100px;
+  margin-left: 50px;
+}
+.title div i{
+  color: brown;
+  font-size: 40px;
+}
+
+.title div h1{
+  margin-top: -30px;
+  font-size: 40px;
+  color: brown;
+}
+
+
+.main div h2{
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-right: -600px;
+  /* border-bottom: 2px solid black; */
+}
+
+.main div h2 i {
+  display: none;
+}
+
+.rack{
+  margin-top: 30px;
+  height: 400px;
+  width: 250px;
+}
+
+.slide-1, .slide-2, .slide-3, .slide-5{
+  margin-top: 30px;
+  height: 400px;
+  width: 250px;
+}
+
+
+
+}
+
+
+
+@media(max-width:600px){
+  .right button{
+  margin-left: 140px;
+  margin-top: 560px;
+}
+
+  .btn{
+  margin-right: 50px;
+  background-color: orange;
+  padding: 15px;
+  font-size: 25px;
+  border: none;
+  transform:  skewX(-20deg);
+}
+
+  .title div{
+  margin-left: 50px;
+  font-size: 80px
+}
+
+.title div i{
+  color: brown;
+  font-size: 50px;
+}
+
+.main{
+  display: flex;
+  margin-top: 50px;
+}
+
+.main div{
+  margin-right: 100px;
+  margin-left: 50px;
+}
+.title div i{
+  color: brown;
+  font-size: 40px;
+}
+
+.title div h1{
+  margin-top: -30px;
+  font-size: 40px;
+  color: brown;
+}
+
+.main{
+  flex-direction: column;
+}
+
+.design{
+  margin-left: -100px;
+}
+.main div h2{
+  margin-left: 60px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-right: -600px;
+  /* border-bottom: 2px solid black; */
+}
+
+.main div h2 i {
+  display: none;
+}
+
+.rack{
+  height: 500px;
+  width: 350px;
+}
+
+.slide-1, .slide-2, .slide-3, .slide-5{
+  margin-top: 30px;
+  height: 500px;
+  width: 350px;
+  margin-left: -10px;
+}
+
+}
+
